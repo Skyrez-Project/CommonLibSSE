@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.19)
+cmake_minimum_required(VERSION 3.22)
 
 option(SKSE_SUPPORT_XBYAK "Enables trampoline support for Xbyak." OFF)
 option(SKYRIM_SUPPORT_AE "Enables support for Skyrim AE" OFF)
@@ -46,7 +46,7 @@ target_compile_definitions(
 target_compile_features(
 	"${PROJECT_NAME}"
 	PUBLIC
-		cxx_std_23
+		cxx_std_20
 )
 
 if (MSVC)
